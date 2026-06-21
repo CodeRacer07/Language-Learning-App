@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌍 Learn Spanish with Fun</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌍 Learn Spanish with Fun</h1>
+
+        <p class="description">
+            Learn common English to Spanish vocabulary through flashcards and quizzes.
+            Practice daily and improve your language skills!
+        </p>
+
+        <div class="info-box">
+            <h3>🇪🇸 About Spanish Language</h3>
+            <p>
+                Spanish is one of the most spoken languages in the world with over
+                500 million speakers. It is the official language of Spain,
+                Mexico, and many countries in South America.
+            </p>
+        </div>
+
+        <div class="card">
+
+            <h4>🇬🇧 English Word</h4>
+            <h2 id="englishWord"></h2>
+
+            <button onclick="showTranslation()">
+                Show Spanish Translation 🇪🇸
+            </button>
+
+            <h4>🇪🇸 Spanish Translation</h4>
+            <h3 id="translation"></h3>
+
+            <p id="fact"></p>
+
+        </div>
+
+        <button onclick="nextWord()">
+            Next Word ➡️
+        </button>
+
+        <hr>
+
+        <h2>📝 Quiz</h2>
+
+        <p id="question"></p>
+
+        <input type="text" id="answer" placeholder="Type your answer here">
+
+        <button onclick="checkAnswer()">
+            Submit
+        </button>
+
+        <h3 id="result"></h3>
+
+        <div class="quote">
+            💡 "Learning a new language opens a new world."
+        </div>
+
+        <hr>
+
+        <h2>📊 Progress</h2>
+
+        <p>
+            📚 Words Viewed:
+            <span id="wordsViewed">0</span>
+        </p>
+
+        <p>
+            ⭐ Correct Answers:
+            <span id="score">0</span>
+        </p>
+        <p>🏆 Level: <span id="level">Beginner 🏅</span></p>
+
+        <div class="progress-bar">
+            <div id="progressFill"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
